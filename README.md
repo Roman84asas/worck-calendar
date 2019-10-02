@@ -1,1 +1,1 @@
-# worckCalendar
+# worck-calendar
