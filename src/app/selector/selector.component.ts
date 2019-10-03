@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {DateService} from "../shared/date.service";
 
 @Component({
@@ -7,6 +7,7 @@ import {DateService} from "../shared/date.service";
   styleUrls: ['./selector.component.scss']
 })
 export class SelectorComponent{
-  constructor(private dateService: DateService) { }
+  constructor(private dateService: DateService) {
 
+  }
 }
