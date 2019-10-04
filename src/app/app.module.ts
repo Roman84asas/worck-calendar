@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { SelectorComponent } from './selector/selector.component';
 import { OrganizerComponent } from './organizer/organizer.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+
 import {MomentPipe} from "./shared/moment.pipe";
 
 @NgModule({
@@ -16,7 +19,10 @@ import {MomentPipe} from "./shared/moment.pipe";
     MomentPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
