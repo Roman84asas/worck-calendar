@@ -1,5 +1,5 @@
 <p>
-  <li class="material-icons">arrow_left</li>
+  <i class="material-icons" (click)="go(-1)">arrow_left</i>
   <span>{{ dateService.date._value | moment }}</span>
-  <li class="material-icons">arrow_right</li>
+  <i class="material-icons" (click)="go(1)">arrow_right</i>
 </p>

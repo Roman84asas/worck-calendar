@@ -8,6 +8,9 @@ import {DateService} from "../shared/date.service";
 })
 export class SelectorComponent{
   constructor(private dateService: DateService) {
+  }
 
+  go(dir: number) {
+    this.dateService.changeDate(dir);
   }
 }
