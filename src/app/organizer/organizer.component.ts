@@ -15,7 +15,7 @@ export class OrganizerComponent implements OnInit {
   form: FormGroup;
   tasks: Task[] = [];
 
-  constructor(private dateService: DateService,
+  constructor(public dateService: DateService,
               private taskService: TaskaService) { }
 
   ngOnInit() {
